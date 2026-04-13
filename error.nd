@@ -1,0 +1,8 @@
+Got an error due to DNS server while connecting with mongoDB server.  
+:::   
+import {setServers} from "node:dns/promises";  
+setServers(["1.1.1.1", "8.8.8.8"]); //overriding DNS server to avoiding DB connection querySRV error  
+  
+  
+:::: Accidentally pushed the Database conenctiong code in github  
+To secure it installed dotenv file and added .env & gitignore file. In the .env file MONGO_URI is added and in gitignore file node_modules/ .env added
